@@ -59,7 +59,7 @@ li {
   font-size: 2.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  background: linear-gradient(#bf3a3a, #141415);
+  background: linear-gradient(#7f3abf, #4f4fe1);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@ li {
 
 .menu-link ul li a {
   text-transform: capitalize;
-  color: rgba(0, 0, 3, 0.8);
+  color: rgba(103, 68, 208, 1);
   transition: 0.5s;
 }
 
@@ -168,3 +168,5 @@ li {
     font-size: 2rem;
   }
 }
+
+

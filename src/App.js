@@ -1,29 +1,32 @@
 import React, { useState } from "react";
-import "./Components/navbar.css";
+import "./Components/Styles/navbar.css";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Services from "./Components/Pages/Services";
+import Jobs from "./Components/Pages/Jobs";
+import Login from "./Components/Pages/Login";
+import Register from "./Components/Pages/Register";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
-const Home = () => <h1>Home Page</h1>;
-const About = () => <h1>About Page</h1>;
-const Services = () => <h1>Services Page</h1>; // Changed from Service to Services
-const Jobs = () => <h1>Jobs Page</h1>;
-
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} /> // Changed from
-        /service to /services
+        <Route path="/services" element={<Services />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
-};
+}
 
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [showMediaIcons] = useState(false);
+
   return (
     <div>
       <nav className="main-nav">
