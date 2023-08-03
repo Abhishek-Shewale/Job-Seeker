@@ -1,0 +1,80 @@
+/* updateAndApply.css */
+.update-apply-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.update-apply-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.update-apply-container label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.update-apply-container input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.update-apply-container select,
+.update-apply-container input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.update-apply-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.update-apply-container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.update-apply-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.update-apply-container button[type="submit"]:active {
+  background-color: #003d80;
+}
+
+.link-back {
+  display: block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .update-apply-container {
+    padding: 20px;
+  }
+  .update-apply-container h1 {
+    font-size: 22px;
+  }
+}

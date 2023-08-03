@@ -1,0 +1,61 @@
+/* services.css */
+
+.services-navbar {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.services-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.services-navbar li {
+  margin-right: 20px;
+}
+
+.services-navbar li:hover a {
+  color: rgba(0, 0, 3, 1);
+}
+
+.services-navbar li:last-child {
+  margin-right: 0;
+}
+
+.services-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.services-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.services-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+}

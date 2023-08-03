@@ -1,0 +1,30 @@
+.about-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.about-content {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.about-image img {
+  border-radius: 8px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 400px;
+  width: 400px; /* Adjust the width of the image to make it slightly bigger than the content */
+}

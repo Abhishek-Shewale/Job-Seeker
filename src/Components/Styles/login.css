@@ -1,0 +1,93 @@
+.login.template {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.form_container {
+  width: 30%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form_container {
+    width: 65%;
+  }
+}
+
+.form_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form_container .mb-2 {
+  margin-bottom: 1rem;
+}
+
+.form_container label {
+  font-weight: 600;
+}
+
+.form_container .form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.form_container input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.form_container .custom-input-label {
+  margin-left: 0.5rem;
+}
+
+.form_container .d-grid {
+  margin-top: 1rem;
+}
+
+.form_container .btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  border: none;
+}
+
+.form_container .btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.form_container p.text-end {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.form_container p.text-end a,
+.form_container p.text-end a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form_container p.text-end .ms-2 {
+  margin-left: 0.5rem;
+}

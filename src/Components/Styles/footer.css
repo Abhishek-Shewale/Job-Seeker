@@ -1,0 +1,92 @@
+/* footer.css */
+
+/* Footer Container */
+.footer {
+  background-color: #f0f0f0; /* You can change the background color if needed */
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Footer Content Section */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Contact Section */
+.footer-section.contact {
+  text-align: left;
+}
+
+/* Links Section */
+.footer-section.links ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Social Section */
+.footer-section.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #007bff;
+  font-size: 24px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Optional: Add additional styles for links in the footer */
+.footer-section.links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section.links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Adjust the spacing between sections if needed */
+.footer-section {
+  margin-bottom: 20px;
+}
+
+/* Optional: Adjust the font size for the footer headings */
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Optional: Add styles for the footer content if needed */
+.footer p {
+  margin: 5px 0;
+}

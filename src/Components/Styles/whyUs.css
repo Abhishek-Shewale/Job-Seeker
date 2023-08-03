@@ -1,0 +1,54 @@
+/* whyUs.css */
+
+.why-us-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.why-us-container h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.reason {
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.reason h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reason p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.reason .react-icon {
+  margin-bottom: 20px;
+}
+
+.reason:last-child {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .reasons {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,101 @@
+/* Base container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section container styles */
+.job-type-container,
+.job-schedule-container,
+.planned-start-date-container,
+.hiring-count-container,
+.hiring-timeline-container {
+  margin-top: 30px;
+}
+
+/* Section heading styles */
+.job-type-heading,
+.job-schedule-heading,
+.planned-start-date-heading,
+.hiring-count-heading,
+.hiring-timeline-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Options container styles */
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Option styles */
+.option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.option input {
+  margin-right: 6px;
+}
+
+/* Date picker container styles */
+.date-picker-container {
+  margin-top: 10px;
+}
+
+.date-picker-container label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Hiring count and timeline select styles */
+.hiring-count-select,
+.hiring-timeline-select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Button styles */
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Text decoration styles for links */
+.text-decoration-none {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}

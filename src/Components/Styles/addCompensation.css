@@ -1,0 +1,183 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading-container {
+  flex: 1;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.pay-display-method-container {
+  margin-bottom: 20px;
+}
+
+.pay-display-method-heading {
+  font-size: 18px;
+}
+
+.show-pay-by-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+}
+
+.pay-display-method-select {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.amount-range-container,
+.starting-amount-container,
+.exact-amount-container,
+.maximum-amount-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.amount-input-container,
+.starting-amount-input-container,
+.exact-amount-input-container,
+.maximum-amount-input-container {
+  margin-right: 10px;
+}
+
+.amount-input-container:last-child,
+.starting-amount-input-container:last-child,
+.exact-amount-input-container:last-child,
+.maximum-amount-input-container:last-child {
+  margin-right: 0;
+}
+
+.to-text {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.input-with-watermark {
+  position: relative;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+}
+
+.rate-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.rate-heading {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.rate-select {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.supplemental-pay-container,
+.benefits-container {
+  margin-bottom: 30px;
+}
+
+.supplemental-pay-heading,
+.benefits-heading {
+  font-size: 18px;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.checkbox-label {
+  margin-left: 5px;
+}
+
+.pay-display-method-heading,
+.supplemental-pay-heading,
+.benefits-heading {
+  font-weight: bold;
+}
+
+.search-box-container {
+  margin-bottom: 10px;
+}
+
+.search-box {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-decoration-none {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-decoration-none:hover {
+  text-decoration: underline;
+}

@@ -1,12 +1,27 @@
-import React, { useState } from "react";
-import "./Components/Styles/navbar.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Pages/Navbar";
 import Home from "./Components/Pages/Home";
-import About from "./Components/Pages/About";
 import Services from "./Components/Pages/Services";
 import Jobs from "./Components/Pages/Jobs";
 import Login from "./Components/Pages/Login";
 import Register from "./Components/Pages/Register";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import PostJob from "./Components/Pages/PostJob";
+import WhyUs from "./Components/Pages/WhyUs";
+import About from "./Components/Pages/About";
+import ContactUs from "./Components/Pages/ContactUs";
+import BasicInfo from "./Components/Pages/BasicInfo";
+import IncludeDetails from "./Components/Pages/IncludeDetails";
+import AddCompensation from "./Components/Pages/AddCompensation";
+import JobDescription from "./Components/Pages/JobDescription";
+import ApplicationReference from "./Components/Pages/ApplicationReference";
+import ReviewJobPost from "./Components/Pages/ReviewJobPost";
+import Footer from "./Components/Pages/Footer";
+import UpdateAndApply from "./Components/Pages/UpdateAndApply";
+import ApplyConfirmation from "./Components/Pages/ApplyConfirmation";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
@@ -14,53 +29,30 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/post-job" element={<PostJob />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/why-us" element={<WhyUs />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/basic-info" element={<BasicInfo />} />
+        <Route path="/include-details" element={<IncludeDetails />} />
+        <Route path="/add-compensation" element={<AddCompensation />} />
+        <Route path="/job-description" element={<JobDescription />} />
+
+        <Route
+          path="/application-reference"
+          element={<ApplicationReference />}
+        />
+        <Route path="/review-jobpost" element={<ReviewJobPost />} />
+        <Route path="/update-and-apply" element={<UpdateAndApply />} />
+        <Route path="/apply-confirmation" element={<ApplyConfirmation />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
-
-const Navbar = () => {
-  const [showMediaIcons] = useState(false);
-
-  return (
-    <div>
-      <nav className="main-nav">
-        {/* 1st logo part */}
-        <div className="logo">
-          <h2>
-            <span>J</span>ob
-            <span>S</span>eeker
-          </h2>
-        </div>
-        {/* 2nd menu part */}
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }
-        >
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/jobs">Jobs</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  );
-};
 
 export default App;
